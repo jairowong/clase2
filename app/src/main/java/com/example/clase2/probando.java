@@ -1,6 +1,7 @@
 package com.example.clase2;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class probando extends AppCompatActivity {
+    TextView te;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +22,8 @@ public class probando extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        te=findViewById(R.id.text22);
+        String valor = getIntent().getStringExtra("nombre");
+        te.setText("Hola "+valor);
     }
 }
