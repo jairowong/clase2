@@ -1,6 +1,8 @@
 package com.example.clase2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -25,5 +27,11 @@ public class probando extends AppCompatActivity {
         te=findViewById(R.id.text22);
         String valor = getIntent().getStringExtra("nombre");
         te.setText("Hola "+valor);
+    }
+    public void Regresar(View view)
+    {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
     }
 }

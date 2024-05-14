@@ -11,7 +11,20 @@
         android:id="@+id/text22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="52dp"
         android:text="hola como estas"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="52dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="Regresar"
+        android:text="regresar"
+        app:layout_constraintEnd_toEndOf="@+id/text22"
+        app:layout_constraintTop_toBottomOf="@+id/text22" />
 </androidx.constraintlayout.widget.ConstraintLayout>

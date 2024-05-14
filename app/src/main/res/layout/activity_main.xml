@@ -39,6 +39,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="tu nombre"
-            android:inputType="text" />
+            android:inputType="text"
+            android:rotationX="-1" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
