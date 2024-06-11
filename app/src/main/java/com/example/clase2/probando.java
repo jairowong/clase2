@@ -19,7 +19,7 @@ public class probando extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_probando);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btnLogin), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -30,6 +30,7 @@ public class probando extends AppCompatActivity {
     }
     public void Regresar(View view)
     {
+
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
         finish();
